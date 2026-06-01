@@ -3,6 +3,9 @@
 A machine learning project that predicts the **selling price of used cars** based on various features such as fuel type, transmission, car age, and more. Multiple regression algorithms are trained, evaluated, and compared to identify the best-performing model.
 
 ---
+**CodeAlpha Internship Project**
+
+![MasterHead](https://img.freepik.com/free-vector/car-showroom-center-with-autos-exhibition-inside-automobile-dealership-store-shop-interior-new-modern-vehicles-models-demonstration-sale-trading_575670-1511.jpg?w=826)
 
 ## Problem Statement
 
