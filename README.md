@@ -1,4 +1,4 @@
-🚗 # Car Price Prediction with Machine Learning
+# 🚗 Car Price Prediction with Machine Learning
 
 [![View on nbviewer](https://img.shields.io/badge/Jupyter-View%20Notebook-orange?style=flat&logo=jupyter&logoColor=white)](https://nbviewer.org/github/khadijaabid0900/CodeAlpha_Car_Price_Prediction/blob/main/Car_Price_Predicition.ipynb)
 
