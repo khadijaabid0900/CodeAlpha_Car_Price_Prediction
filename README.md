@@ -1,10 +1,6 @@
 # 🚗 Car Price Prediction with Machine Learning
 
-[![View on nbviewer](https://img.shields.io/badge/Jupyter-View%20Notebook-orange?style=flat&logo=jupyter&logoColor=white)](https://nbviewer.org/github/khadijaabid0900/CodeAlpha_Car_Price_Prediction/blob/main/Car_Price_Predicition.ipynb)
-
-**CodeAlpha Internship Project**
-
-![MasterHead](https://img.freepik.com/free-vector/car-showroom-center-with-autos-exhibition-inside-automobile-dealership-store-shop-interior-new-modern-vehicles-models-demonstration-sale-trading_575670-1511.jpg?w=826)
+A machine learning project that predicts the **selling price of used cars** based on various features such as fuel type, transmission, car age, and more. Multiple regression algorithms are trained, evaluated, and compared to identify the best-performing model.
 
 ---
 
@@ -154,8 +150,7 @@ jupyter
 
 **Khadija Abid**
 Data Scientist | Machine Learning Engineer
-[![Gmail](https://img.shields.io/badge/Gmail-khadijaabid0900@gmail.com-D14836?style=flat&logo=gmail&logoColor=white)](mailto:khadijaabid0900@gmail.com)
-🔗 [LinkedIn](https://www.linkedin.com/in/khadija-abid-61bbba314/)
+[LinkedIn](https://www.linkedin.com/in/khadija-abid-61bbba314/)
 
 ---
 
