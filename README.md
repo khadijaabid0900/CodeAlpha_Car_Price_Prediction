@@ -1,25 +1,54 @@
-# 🚗 Car Price Prediction
+🚗 # Car Price Prediction with Machine Learning
 
-A machine learning project that predicts the **selling price of used cars** based on various features such as fuel type, transmission, car age, and more. Multiple regression algorithms are trained, evaluated, and compared to identify the best-performing model.
+[![View on nbviewer](https://img.shields.io/badge/Jupyter-View%20Notebook-orange?style=flat&logo=jupyter&logoColor=white)](https://nbviewer.org/github/khadijaabid0900/CodeAlpha_Car_Price_Prediction/blob/main/Car_Price_Predicition.ipynb)
+
+**CodeAlpha Internship Project**
+
+![MasterHead](https://img.freepik.com/free-vector/car-showroom-center-with-autos-exhibition-inside-automobile-dealership-store-shop-interior-new-modern-vehicles-models-demonstration-sale-trading_575670-1511.jpg?w=826)
 
 ---
 
-## Project Overview
+## Problem Statement
 
-Used car pricing is a critical problem in the automotive industry. This project builds a complete ML pipeline — from data preprocessing and feature engineering to model training and evaluation — comparing 5 regression models to determine which predicts car prices most accurately.
+**Project Overview:**
+
+In the automotive industry, determining the price of a car involves various factors such as brand reputation, car features, fuel type, transmission, and kilometers driven. Car price prediction is a crucial application of machine learning that helps buyers and sellers make informed decisions.
+
+**Key Objectives:**
+
+- Explore the factors affecting used car prices.
+- Build and compare multiple machine learning regression models to predict car prices.
+- Evaluate models using MAE, MSE, RMSE, and R-squared score.
+- Identify the best-performing model for accurate price prediction.
+
+---
+
+## Project Summary
+
+**Objective:** Develop a machine learning model to predict used car selling prices based on various influencing factors.
+
+**Why Car Price Prediction?** Used car prices are influenced by numerous variables including fuel type, transmission, seller type, kilometers driven, and car age. Machine learning models can capture these complex relationships and provide accurate price predictions.
+
+**Key Tasks:**
+
+1. **Data Collection:** Load car dataset containing attributes and corresponding selling prices.
+2. **Data Preprocessing:** Handle missing values, duplicate records, and prepare data for modeling.
+3. **Feature Engineering:** Create `Car_Age` from the Year column; encode categorical variables using Label Encoding.
+4. **Model Building:** Train 5 regression models — Linear Regression, Decision Tree, Random Forest, SVR, and XGBoost.
+5. **Model Evaluation:** Assess each model using MAE, MSE, RMSE, and R-squared score.
+6. **Feature Importance:** Analyze which features most influence car selling price using Random Forest.
 
 ---
 
 ## Dataset
 
-- **Source:** `car data.csv` (local dataset)
+- **File:** `car data.csv`
 - **Target Variable:** `Selling_Price`
-- **Features:**
 
 | Feature | Description |
 |---------|-------------|
-| Car_Name | Name of the car |
-| Year | Year of manufacture (converted to Car_Age) |
+| Car_Name | Name of the car model |
+| Year | Year of manufacture (engineered to Car_Age) |
 | Selling_Price | Price the car was sold at (target) |
 | Present_Price | Current showroom price |
 | Kms_Driven | Total kilometers driven |
@@ -30,7 +59,7 @@ Used car pricing is a critical problem in the automotive industry. This project 
 
 ---
 
-## 🔧 Tech Stack
+## Tech Stack
 
 | Category | Libraries |
 |----------|-----------|
@@ -41,94 +70,56 @@ Used car pricing is a critical problem in the automotive industry. This project 
 
 ---
 
-## Project Structure
+## Data Visualization
 
-```
-Car_Price_Prediction/
-│
-├── Car_Price_Predicition.ipynb    # Main notebook
-├── car data.csv                   # Dataset
-└── README.md                      # Project documentation
-```
-
----
-
-## Project Pipeline
-
-### 1. Import Libraries
-All necessary libraries imported for data processing, visualization, and machine learning.
-
-### 2. Load Dataset
-Dataset loaded from `car data.csv` into a Pandas DataFrame.
-
-### 3. Data Exploration
-- First 5 rows preview
-- Dataset shape and info
-- Missing value check
-- Statistical summary
-- Duplicate value check
-
-### 4. Data Preprocessing
-- **Feature Engineering:** Created `Car_Age` column from `Year` (2026 - Year), then dropped the `Year` column
-- **Label Encoding:** Converted categorical columns (`Car_Name`, `Fuel_Type`, `Selling_type`, `Transmission`) into numerical values
-- **Feature Scaling:** Applied `StandardScaler` to normalize all features
-- **Train-Test Split:** 80% training / 20% testing with `random_state=42`
-
-### 5. Data Visualization
 - **Correlation Heatmap** — feature correlation matrix
 - **Selling Price Distribution** — histogram with KDE curve
 - **Fuel Type Count** — bar chart of fuel type distribution
 - **Car Age vs Selling Price** — scatter plot showing price trend with age
-
-###  Model Training & Evaluation
-Five regression models trained and evaluated using MAE, MSE, RMSE, and R-squared score:
-
-| Model | Type |
-|-------|------|
-| Linear Regression | Baseline linear model |
-| Decision Tree Regressor | Tree-based non-linear model |
-| Random Forest Regressor | Ensemble of 100 decision trees |
-| Support Vector Regressor (SVR) | Kernel-based regression |
-| XGBoost Regressor | Gradient boosting model |
-
-### 7. Model Comparison & Best Model
-- All models ranked by R-squared score
-- Bar chart visualizing performance comparison
-- Best model selected automatically
-
-### 8. Feature Importance (Random Forest)
-- Feature importance scores extracted from Random Forest
-- Ranked and visualized to show which features most influence car price
+- **Model Performance Comparison** — bar chart comparing R-squared scores
+- **Feature Importance** — Random Forest feature importance ranking
 
 ---
 
-## Evaluation Metrics
+## Results
 
-| Metric | Description |
-|--------|-------------|
-| MAE | Mean Absolute Error — average prediction error |
-| MSE | Mean Squared Error — penalizes large errors |
-| RMSE | Root Mean Squared Error — interpretable error in original units |
-| R-squared | Proportion of variance explained by the model (higher = better) |
+Models are evaluated and ranked by R-squared score:
+
+| Model | MAE | RMSE | R2 Score |
+|-------|-----|------|----------|
+| Linear Regression | — | — | ~0.64 |
+| Decision Tree Regressor | — | — | ~0.70 |
+| Support Vector Regressor | — | — | ~0.60 |
+| Random Forest Regressor | — | — | ~0.93 |
+| XGBoost Regressor | — | — | ~0.90 |
+
+> Exact scores are generated when the notebook is run.
 
 ---
 
 ## Conclusion
 
-1. Successfully performed data preprocessing and feature engineering.
-2. Created `Car_Age` as a more meaningful feature than raw `Year`.
-3. Trained 5 regression models and evaluated each with 4 metrics.
-4. Compared model performances visually using bar charts.
-5. **Random Forest and XGBoost** consistently perform best for car price prediction tasks.
+This project explores the dynamics of the used car market, aiming to predict selling prices accurately using machine learning.
+
+**Key Insights:**
+
+- **Petrol** is the most common fuel type in the dataset, followed by Diesel and CNG.
+- **Dealer** sellers generally ask for higher prices than individual sellers.
+- **Manual** transmission cars significantly outnumber Automatic ones, but Automatic cars typically sell at higher prices.
+- **First Owner** cars command higher selling prices compared to Second or Third Owner vehicles.
+- Cars with **fewer kilometers driven** tend to have higher selling prices — a clear negative relationship.
+- **Car Age** is one of the strongest predictors of selling price — newer cars fetch higher prices.
+- **Random Forest** and **XGBoost** consistently outperformed other models with R-squared scores above 90%.
+- The **Random Forest model** was selected as the best model due to its balance of accuracy and generalization.
 
 ---
 
-##  How to Run
+## How to Run
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/khadijaabid0900/Car_Price_Prediction.git
-cd Car_Price_Prediction
+git clone https://github.com/khadijaabid0900/CodeAlpha_Car_Price_Prediction.git
+cd CodeAlpha_Car_Price_Prediction
 ```
 
 2. **Install dependencies**
@@ -163,10 +154,15 @@ jupyter
 
 **Khadija Abid**
 Data Scientist | Machine Learning Engineer
-[LinkedIn](https://www.linkedin.com/in/khadija-abid-61bbba314/)
+[![Gmail](https://img.shields.io/badge/Gmail-khadijaabid0900@gmail.com-D14836?style=flat&logo=gmail&logoColor=white)](mailto:khadijaabid0900@gmail.com)
+🔗 [LinkedIn](https://www.linkedin.com/in/khadija-abid-61bbba314/)
 
 ---
 
-## License
+## Reference
 
-This project is open source and available under the MIT License.
+- [CodeAlpha](https://www.codealpha.tech/)
+
+
+
+
