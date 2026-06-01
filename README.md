@@ -163,11 +163,10 @@ jupyter
 
 **Khadija Abid**
 Data Scientist | Machine Learning Engineer
-khadijaabid0900@gmail.com
 [LinkedIn](https://www.linkedin.com/in/khadija-abid-61bbba314/)
 
 ---
 
 ## License
 
-This project is open source and available under the [MIT License](LICENSE).
+This project is open source and available under the MIT License.
